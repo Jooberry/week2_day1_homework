@@ -1,10 +1,11 @@
 require ('minitest/autorun')
 require_relative('./homework')
 
+# Part A
 class TestStudent < MiniTest::Test
 
 def setup
-  @student = Student.new("Joo", 11)
+  @student = Student.new("Joo", 11, "Ruby")
 end
 
 def test_student_name
@@ -22,9 +23,15 @@ end
 
 def test_student_can_talk
   assert_equal("I can talk!", @student.talk)
-
 end
 
+def test_choose_favourite_Language
+  assert_equal("I love Ruby", @student.favourite_language)
+end
+end
+
+# Part B
+class TestSportsTeam < MiniTest::Test
 
 
 end

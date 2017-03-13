@@ -1,8 +1,10 @@
+# Part A
 class Student
 
-def initialize(student_name, cohort_number)
+def initialize(student_name, cohort_number, language)
   @student_name = student_name
   @cohort_number = cohort_number
+  @language = language
 end
 
 def student_name
@@ -20,6 +22,17 @@ end
 def talk
   return "I can talk!"
 end
+
+def favourite_language
+  return "I love #{@language}"
+end
+end
+
+# Part B
+
+class SportsTeam
+
+
 
 
 
