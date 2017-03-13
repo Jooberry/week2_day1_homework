@@ -17,6 +17,9 @@ def set_student_name(name)
   @student_name = name
 end
 
+def talk
+  return "I can talk!"
+end
 
 
 

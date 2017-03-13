@@ -20,5 +20,11 @@ def test_set_student_name
   assert_equal("Jooniper", @student.student_name)
 end
 
+def test_student_can_talk
+  assert_equal("I can talk!", @student.talk)
+
+end
+
+
 
 end
