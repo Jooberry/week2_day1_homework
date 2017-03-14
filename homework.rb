@@ -1,45 +1,45 @@
 # Part A
 class Student
 
-def initialize(student_name, cohort_number, language)
-  @student_name = student_name
-  @cohort_number = cohort_number
-  @language = language
-end
+  def initialize(student_name, cohort_number, language)
+    @student_name = student_name
+    @cohort_number = cohort_number
+    @language = language
+  end
 
-def student_name
-  return @student_name
-end
+  def student_name
+    return @student_name
+  end
 
-def cohort_number
-  return @cohort_number
-end
+  def cohort_number
+    return @cohort_number
+  end
 
-def set_student_name(name)
-  @student_name = name
-end
+  def set_student_name(name)
+    @student_name = name
+  end
 
-def talk
-  return "I can talk!"
-end
+  def talk
+    return "I can talk!"
+  end
 
-def favourite_language
-  return "I love #{@language}"
-end
+  def favourite_language
+    return "I love #{@language}"
+  end
 end
 
 # Part B
 
 class SportsTeam
 
-attr_accessor :team, :players_array, :coach
+  attr_accessor :team, :players_array, :coach
 
-def initialize(team, players_array, coach, points)
-  @team = team
-  @players_array = players_array
-  @coach = coach
-  @points = points
-end
+  def initialize(team, players_array, coach, points)
+    @team = team
+    @players_array = players_array
+    @coach = coach
+    @points = points
+  end
 
 # def team_name
 #   return @team
@@ -74,5 +74,28 @@ def points_for_win(result)
   end
 end
 
+# EXTENSION
 
+# class Library
+
+#   attr_accessor :books
+
+#   def initialize(books)
+#     @books = books
+#   end
+
+#   def list_books
+#     return @books
+#   end
+
+#   def book_info(title)
+#     for book in @books
+#       if book[:title] == title
+#         return book
+#       end
+#     end
+#   end
+
+
+# end
 end
