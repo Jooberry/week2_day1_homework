@@ -39,8 +39,7 @@ end
 def change_rental_details(title, name, date)
   for book in @books
     if book[:title] == book
-      book[:rental_details][:student_name] = name
-      book[:rental_details][:date] = date
+      book[:rental_details] = { student_name: student, date: due_date }
     end
   end
 end
